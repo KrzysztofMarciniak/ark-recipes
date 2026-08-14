@@ -5,13 +5,17 @@ ARK_DEPENDS=""
 ARK_BINARIES="usr/bin/clang usr/bin/clang++ usr/bin/clang-cpp"
 
 build() {
-    cp -a usr /.
+    mkdir -p "$HOME/.ark/bin"
+    mkdir -p "$HOME/.ark/lib"
+
+    cp -a "$ARK_BUILD_DIR/usr/bin/." "$HOME/.ark/bin/"
+    cp -a "$ARK_BUILD_DIR/usr/lib/20" "$HOME/.ark/lib/"
 }
 
 remove() {
-    rm -f /usr/bin/clang
-    rm -f /usr/bin/clang++
-    rm -f /usr/bin/clang-cpp
-    rm -f /usr/bin/clang-20
-    rm -rf /usr/lib/20
+    rm -f "$HOME/.ark/bin/clang"
+    rm -f "$HOME/.ark/bin/clang++"
+    rm -f "$HOME/.ark/bin/clang-cpp"
+    rm -f "$HOME/.ark/bin/clang-20"
+    rm -rf "$HOME/.ark/lib/20"
 }
