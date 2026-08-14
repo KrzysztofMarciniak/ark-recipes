@@ -1,6 +1,6 @@
 # recipe.sh
 ARK_SOURCE_URL="https://github.com/KrzysztofMarciniak/ark-hello-world/archive/refs/tags/1.0.tar.gz"
-ARK_SOURCE_SHA256="9f2646a84189432d7fde7807611b4865404635a3c529e0f071094274bfedb17e"
+ARK_SOURCE_SHA256="afb6bf287f63778a6e57274974425858f11233185c3f0e9844b79e4545d3ae39"
 ARK_TYPE="source"
 ARK_DEPENDS=""
 
