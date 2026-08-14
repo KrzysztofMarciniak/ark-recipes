@@ -2,8 +2,9 @@ ARK_SOURCE_URL="https://github.com/KrzysztofMarciniak/ark-hello-world/archive/re
 ARK_SOURCE_SHA256="afb6bf287f63778a6e57274974425858f11233185c3f0e9844b79e4545d3ae39"
 ARK_TYPE="source"
 ARK_DEPENDS=""
-ARK_BINARIES="ark-hello-world"
+ARK_BINARIES="build/ark-hello-world"
 
 build() {
-    ./build.sh
+    sh ./build.sh
+    cp $ARK_BINARIES ~/.ark/bin/.
 }
