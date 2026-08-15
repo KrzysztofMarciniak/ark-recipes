@@ -8,3 +8,7 @@ build() {
     sh ./build.sh
     cp $ARK_BINARIES ~/.ark/bin/.
 }
+
+remove() {
+    rm -f "$HOME/.ark/bin/ark-hello-world"
+}
